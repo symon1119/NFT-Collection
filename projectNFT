@@ -1,0 +1,29 @@
+let projectNFT = [];
+
+function mintNFT(_location, _color, _price){
+    const eheads = {
+        location: _location,
+        color: _color,
+        price: _price
+    }
+    projectNFT.push(eheads);
+}
+
+function listNFTs(){
+    for(let i = 0; i < projectNFT.length; i++);
+}
+
+function getTotalSupply(){
+    console.log("Total NFT:" + projectNFT.length);
+}
+
+mintNFT("BRONZE", "Red", 3,000);
+mintNFT("SILVER", "Grey", 6,000);
+mintNFT("GOLD", "Yello", 9,000);
+mintNFT("PLATINUM", "White", 12,000);
+mintNFT("VIP", "Blue", 14,000);
+mintNFT("MOSHPIT", "Orange", 17,000);
+
+listNFTs();
+
+getTotalSupply();
